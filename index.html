@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Templar</title>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="dist/style.min.css">
+  
+</head>
+
+<body>
+  
+  <div ng-app="myapp" ng-controller="SampleController as ctrl">
+    <input type="text" ng-model="ctrl.tars">
+    <span>{{ctrl.tars}}</span>
+    <button class="btn" ng-click="ctrl.doClear()">Clear</button>
+  </div>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+  <script src="dist/script.js"></script>
+
+</body>
+</html>
